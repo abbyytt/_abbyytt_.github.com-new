@@ -1,3 +1,4 @@
+<html>
 <body>
     <h1>Exploring the DOM</h1>
 
@@ -15,3 +16,4 @@
         }
     </script>
 </body>
+</html>
