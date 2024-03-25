@@ -3,7 +3,7 @@
     <h1>Exploring the DOM</h1>
 
     <h2>Count Down: <span id="count">20</span></h2>
-    <button onclick="updateCount()">Next</button>
+    <button onclick="updateCount()">Next Number</button>
 
     <script>
         var i = 20;
@@ -13,6 +13,12 @@
             countobj = document.getElementById("count");
             console.log("Updating object: " + countobj);
             countobj.innerHTML = "<b>" + i + "</b>";
+
+             if (i <= 0) { 
+                countobj.innerHTML = "<b><font size='+5'>SURPRISE!!!</b>";
+
+
+            
         }
     </script>
 </body>
