@@ -13,8 +13,11 @@
             i = i - 1; 
 
             displayCount(i);
+
+            var initialRed = 255; 
+            var finalRed = 150;
           
-            var redValue = Math.round((4 - i) * 64);
+            var redValue = initialRed - (i / 4) * (initialRed - finalRed);
 
             if (redValue > 255) {
                 redValue = 255;
