@@ -1,5 +1,5 @@
 <html>
-    <body>
+    <body style="background-color: #C89696">
     <h1><font color='blue'>An easy, fun game!</h1>
 
     <script>
@@ -14,12 +14,12 @@
 
             displayCount(i);
 
-            var initialRed = 255; 
-            var finalRed = 0;
+            var initialRed = 0; 
+            var finalRed = 255;
           
-            var redValue = initialRed - (i / 4) * (initialRed - finalRed);
+            var redValue = initialRed - (i / 4) * (finalRed - initialRed);
 
-            if (redValue < finalRed) {
+            if (redValue > finalRed) {
                 redValue = finalRed; 
             }
 
