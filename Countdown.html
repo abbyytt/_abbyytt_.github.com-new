@@ -14,16 +14,6 @@
 
             displayCount(i);
 
-            var initialRed = 0; 
-            var finalRed = 255;
-          
-            var redValue = initialRed + (i / 4) * (finalRed - initialRed);
-
-            if (redValue > finalRed) {
-                redValue = finalRed; 
-            }
-
-            document.body.style.backgroundColor = 'rgb(' + redValue + ', 200, 200)';
 
             if (i <= 0) { 
                 var countobj = document.getElementById("count");
