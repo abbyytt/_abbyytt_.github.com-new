@@ -1,16 +1,19 @@
 <html>
 <body>
-    <h1><font color='blue'>A easy, fun game!</h1>
+    <h1><font color='blue'>An easy, fun game!</h1>
 
     <script>
-        function updateCount() {
-            i = i - 1; // single "=" means assignment (":=") 
-
+        function displayCount(counter) {
             countobj = document.getElementById("count");
-            console.log("Updating i: " + i);
-            countobj.innerHTML = "<b>" + i + "</b>";
+            countobj.innerHTML = "<em>" + counter.toString() + "</em>";
+        }
+        function updateCount() {
+            i = i - 1; 
 
-            if (i <= 0) { // double "==" is equality comparison
+            displayCount(i)
+          
+
+            if (i <= 0) { 
                 countobj.innerHTML = "<b><font size='+5'>SURPRISE!</b>";
                 document.body.style.backgroundColor = '#FF2258';
 
@@ -23,7 +26,7 @@
         var i = 4;
     </script>
 
-    <h2>Count Down: <span id="count"><script>document.write(i)</script></span></h2>
+    <h2>Count Down: <span id="count"></span></h2>
     <button onclick="updateCount()">Next Number!</button>
 
 </body>
