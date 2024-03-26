@@ -3,8 +3,10 @@
     <h1><font color='green'>An easy, fun game!</h1>
 
     <script>
+        var i = 4;
+
         function displayCount(counter) {
-            countobj = document.getElementById("count");
+            var countobj = document.getElementById("count");
             countobj.innerHTML = "<em>" + counter.toString() + "</em>";
         }
         function updateCount() {
@@ -22,9 +24,6 @@
         }
     </script>
 
-    <script>
-        var i = 4;
-    </script>
 
     <h2>Count Down: <span id="count"></span></h2>
     <button onclick="updateCount()">Next Number!</button>
