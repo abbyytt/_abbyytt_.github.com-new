@@ -1,6 +1,6 @@
 <html>
 <body>
-    <h1><font color='blue'>Exploring the DOM</h1>
+    <h1><font color='blue'>A easy, fun game!</h1>
 
     <script>
         function updateCount() {
@@ -8,7 +8,7 @@
 
             countobj = document.getElementById("count");
             console.log("Updating i: " + i);
-            countobj.innerHTML = "<em>" + i + "</em>";
+            countobj.innerHTML = "<b>" + i + "</b>";
 
             if (i <= 0) { // double "==" is equality comparison
                 countobj.innerHTML = "<b><font size='+5'>SURPRISE!</b>";
