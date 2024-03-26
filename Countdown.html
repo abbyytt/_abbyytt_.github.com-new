@@ -14,6 +14,13 @@
 
             displayCount(i);
           
+            var redValue = Math.round((4 - i) * 64);
+
+            if (redValue > 255) {
+                redValue = 255;
+            }
+
+            document.body.style.backgroundColor = 'rgb(' + redValue + ', 0, 0)';
 
             if (i <= 0) { 
                 var countobj = document.getElementById("count");
