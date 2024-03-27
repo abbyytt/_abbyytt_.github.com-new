@@ -19,6 +19,19 @@
             .bottom-button:hover {
                 background-color: #b9a825; 
             }
+
+            .countdown-button {
+                position: fixed;
+                bottom: 30px;
+                left: 25%;
+                transform: translateX(-50%);
+                padding: 20px 20px;
+                background-color:aqua;
+                color:blueviolet;
+                border:cadetblue; 
+                cursor:pointer;
+            
+            }
         </style>
     <script>
         var i = 4;
@@ -55,7 +68,7 @@
 
 
     <h2>Count Down: <span id="count"></span></h2>
-    <button onclick="updateCount()">Next Number!</button>
+    <button class="countdown-button" onclick="updateCount()">Next Number!</button>
 
     <script>
         displayCount(i);
