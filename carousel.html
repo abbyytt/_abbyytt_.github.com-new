@@ -1,6 +1,6 @@
 <html>
-    <body style="background-color: #9ed4f7">
-    <h1><font color='hotpink'>Further exploration of fruit!</h1>
+    <title>Photo Carousel</title>
+   
         <style>
           
             .the-button {
@@ -38,13 +38,13 @@
 
             }
 
-            .carousel {
+            .carousel-contiainer {
                 display: block;
                 margin: 0 auto;
                 overflow: hidden;
-                position: relative;
                 width: 400px; 
                 height: 500px; 
+                margin-top: 20px;
             }
 
             .carousel img {
@@ -56,16 +56,14 @@
     
     
 </style>
+<body style="background-color: #9ed4f7">
+    <h1><font color='hotpink'>Further exploration of food!</h1>
 
-<div>
+<div class="carousel-contiainer">
     <img id="cimage" height="500" src="apple.jpg" alt="Image 1">
-    <img id="cimage" height="500" src="cucumber.jpg" alt="Image 2">
-    <img id="cimage" height="500" src="mango.jpg" alt="Image 3">
-    <img id="cimage" height="500" src="BellPeppers.jpg" alt="Image 4">
 </div>
 
 <script>
-    <div style=".carousel">
         
         var images= [
         'apple.jpg',
@@ -75,18 +73,25 @@
     ];
 
         var currentimageindex = 0;
-
-    function getpicture(index) {
         var carouselImage = document.getElementById("cimage");
-        carouselImage.src = images[index];
+
+
+    function getpicture(direction) {
+        currentImageIndex += direction;
+
+        if (currentImageIndex >= images.length) {
+                currentImageIndex = 0;
+
+            } else if (currentImageIndex < 0) {
+                currentImageIndex = images.length - 1;
+            }
+        
+        carouselImage.src = images[currentImageIndex];
     };
 
     
-    function changeSlides() {
-
-
-    };
-    </div>
+   
+    
 </script>
 
 
