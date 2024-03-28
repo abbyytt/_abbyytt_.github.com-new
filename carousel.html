@@ -65,17 +65,28 @@
 </div>
 
 <script>
-    var images= [
+    <div style=".carousel">
+        
+        var images= [
         'apple.jpg',
         'cucumber.jpg',
         'mango.jpg',
         'BellPeppers.jpg' 
-    ]
+    ];
 
+        var currentimageindex = 0;
+
+    function getpicture(index) {
+        var carouselImage = document.getElementById("cimage");
+        carouselImage.src = images[index];
+    };
+
+    
     function changeSlides() {
 
 
-    }
+    };
+    </div>
 </script>
 
 
