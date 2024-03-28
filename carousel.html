@@ -40,7 +40,21 @@
                 font-size: large;
 
             }
+            .prev-button {
+                cursor: pointer;
+                padding: 20px 20px;
+                background-color:chartreuse;
+                color: hotpink;
+                font-size: large;
 
+            }
+
+            .prev-button:hover {
+                background-color: forestgreen;
+                color:lightpink;
+                font-size: large;
+
+            }
             .carousel-container {
                 display: block;
                 margin: 0 auto;
@@ -104,6 +118,7 @@
 </script>
 
 <button class="next-button" onclick="getpicture(1)">Next!</button>
+<button class="prev-button" onclick="getpicture(-1)">Previous!</button>
 
 
 <a href="index.html"><button class="the-button"> Return to Homepage</button></a>
