@@ -7,11 +7,11 @@
                 position: fixed; 
                 bottom: 20px;
                 padding: 20px 20px; 
+                padding: black;
                 left: 50%; 
                 transform: translateX(-50%); 
                 background-color: #eca37ceb; 
-                color: hotpink; 
-                border:black; 
+                color: hotpink;
                 cursor: pointer;
                 font-size: large; 
             }
@@ -37,9 +37,41 @@
                 font-size: large;
 
             }
+
+            .carousel {
+                display: block;
+                margin: 0 auto;
+                overflow: hidden;
+                position: relative;
+                width: 400px; 
+                height: 500px; 
+            }
+
+            .carousel img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+            
+    
+    
 </style>
 
+<div>
+    <img id="cimage" height="500" src="apple.jpg" alt="Image 1">
+    <img id="cimage" height="500" src="cucumber.jpg" alt="Image 2">
+    <img id="cimage" height="500" src="mango.jpg" alt="Image 3">
+    <img id="cimage" height="500" src="BellPeppers.jpg" alt="Image 4">
+</div>
+
 <script>
+    var images= [
+        'apple.jpg',
+        'cucumber.jpg',
+        'mango.jpg',
+        'BellPeppers.jpg' 
+    ]
+
     function changeSlides() {
 
 
